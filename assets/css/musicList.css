@@ -1,0 +1,149 @@
+.msMainBg{
+    width: 980px;
+    min-height: 700px;
+    _height: 700px;
+    margin: 20px auto 0;
+    background-color: #fff;
+    border: 1px solid #d3d3d3;
+    border-radius: 8px;
+}
+
+.msMain{
+    padding: 30px 40px;
+}
+
+.msTop{
+    width: 420px;
+    height: 40px;
+    margin: 0 auto;
+    background: url("../images/sprite.png") no-repeat 0 0px;
+    z-index: 10;
+}
+
+.msInput{
+    float: left;
+    width: 320px;
+    height: 17px;
+    margin: 12px 0 0 20px;
+    padding: 0;
+    background: #fff;
+    border: none;
+    outline: 0;
+}
+
+.msInputBtn{
+    float: right;
+    width: 50px;
+    height: 40px;
+    text-indent: -9999px;
+    background: url("../images/sprite.png") no-repeat 0 9999px;
+}
+.msInputBtn:hover {
+    background-position: -430px 0;
+    text-decoration: none;
+}
+
+.msMain .main1{
+
+}
+
+.msMain .number{
+    color: #999;
+    font-size: 12px;
+}
+
+.msMain .number>span{
+    color: #c20c0c;
+}
+
+.msMain .musicList{
+    margin-top: 10px;
+}
+
+.msMain .item{
+    padding: 10px 10px 8px 18px;
+    border: 1px solid #fff;
+    display: flex;
+    justify-content: space-around;
+}
+
+.msMain .item:hover{
+    border: 1px solid #e1e1e1;
+    background: #f2f2f2;
+}
+
+.msMain .even{
+    background: #f7f7f7;
+    border-color: #f7f7f7;
+}
+
+.msMain .item span{
+    flex:1;
+    color:#666;
+    font-size:12px;
+    text-align: center;
+}
+
+.msMain .item a{
+    position: absolute;
+    width:900px;
+    height:35px;
+    z-index: 1000;
+}
+
+.msMain .yema{
+    margin: 20px 0;
+    text-align: center;
+}
+
+.msMain .yema>a{
+    margin: 0 1px 0 2px;
+    font-size: 12px;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    vertical-align: middle;
+    background: url("../images/button.png") no-repeat 0 9999px;
+}
+
+.msMain .yema .firBtn,
+.msMain .yema .lastBtn
+{
+    height: 24px;
+    line-height: 24px;
+    color: #333;
+    text-align: left;
+    padding: 0;
+}
+
+.msMain .yema .disable{
+    cursor: not-allowed;
+    background-position: 0 -620px;
+    color: #cacaca;
+}
+
+.msMain .yema .firBtn{
+    width: 47px;
+    padding-left: 22px;
+    background-position: 0 -590px;
+}
+
+.msMain .yema .lastBtn{
+    width: 57px;
+    padding-left: 12px;
+    background-position: -75px -560px;
+}
+
+.msMain .numBtn{
+    height: 22px;
+    padding: 0 8px;
+    background-color: #fff;
+    line-height: 22px;
+}
+
+.msMain .yema .act{
+    background-position: 0 -650px;
+    border-color: #A2161B;
+    color: #fff;
+    cursor: default;
+}

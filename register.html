@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="zh">
+  <meta charset="UTF-8">
+  <title>注册页面</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" href="./assets/css/slider.css">
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/animate.css" />
+  <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+
+<body>
+  <!-- 页面顶部-->
+  <header>
+    <div class="container">
+
+      <div class="navbar-header">
+        <a href="./index.html" class="navbar-brand">
+          <img src="assets/images/logo.png" alt="">
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <div class="parent">
+    <div class="container">
+      <div class="panel rt">
+        <form id="form-register">
+          <div class="txt">
+            <p>新用户注册
+              <span>
+                <a href="login.html">直接登录</a>
+              </span>
+            </p>
+          </div>
+          <div class="form-group">
+            <label for="uname">用户名：</label>
+            <input autocomplete required minlength="3" maxlength="12" type="text" placeholder="请输入用户名" autofocus name="uname" id="uname"
+            />
+            <span class="msg-default">用户名长度在3到12位之间</span>
+          </div>
+          <div class="form-group">
+            <label for="upwd">登录密码：</label>
+            <input required type="password" minlength="6" maxlength="12" placeholder="请输入密码" name="upwd" autofocus id="upwd" />
+            <span class="msg-default hidden">密码长度在6到12位之间</span>
+          </div>
+          <div class="form-group">
+            <label for="upwdconfirm">确认密码：</label>
+            <input required type="password" minlength="6" maxlength="12" placeholder="请确认密码" name="upwdconfirm" autofocus id="upwdconfirm"
+            />
+            <span class="msg-default hidden">密码长度在6到12位之间</span>
+          </div>
+          <div class="form-group">
+            <label for="email">邮箱：</label>
+            <input autocomplete required type="email" placeholder="请输入邮箱地址" name="email" id="email" />
+            <span class="msg-default hidden">请输入合法的邮箱地址</span>
+          </div>
+          <div class="form-group">
+            <label for="phone">手机号：</label>
+            <input id="phone" name="phone" placeholder="请输入您的手机号" pattern="(\d{11})|^((\d{7,8})|(\d{4}|\d{3})-(\d{7,8})|(\d{4}|\d{3})-(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1})|(\d{7,8})-(\d{4}|\d{3}|\d{2}|\d{1}))$"
+              required type="text" />
+            <span class="msg-default hidden">请输入合法的手机号</span>
+          </div>
+          <div class="form-group">
+            <label></label>
+            <input type="button" value="提交注册信息" id="bt-register" />
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  
+  <!-- 底部版权 -->
+  <footer id="footer">
+
+  </footer>
+
+  <!--弹出的小广告-->
+  <script src="./assets/js/jquery.min.js"></script>
+  <!-- <script src="./assets/js/base.js"></script> -->
+  <script src="./assets/js/register.js"></script>
+</body>
+
+</html>

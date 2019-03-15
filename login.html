@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+  <meta charset="UTF-8">
+  <title>登陆页面</title>
+  <link rel="icon" href="img/favicon.ico">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" href="./assets/css/slider.css">
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+  <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/login.css">
+</head>
+
+<body>
+  <!-- 页面顶部-->
+  <header>
+    <div class="container">
+
+      <div class="navbar-header">
+        <a href="./index.html" class="navbar-brand">
+          <img src="assets/images/logo.png" alt="">
+        </a>
+      </div>
+
+    </div>
+  </header>
+
+  <div id="container">
+    <div id="cover" class="rt">
+      <form id="form-login">
+        <div class="txt">
+          <p style="margin:0">请登录
+            <span>
+              <a href="register.html">新用户注册</a>
+            </span>
+          </p>
+          <div class="text">
+            <input type="text" placeholder="请输入您的用户名" name="uname" id="uname" required autofocus>
+            <span>
+              <!-- <img src="./assets/images/register/yhm.png"> -->
+              <i class="fa fa-user-circle userPasswordIcon" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="text">
+            <input type="password" id="password" placeholder="请输入您的密码" name="upwd" id="upwd" required minlength="6" maxlength="15">
+            <span>
+              <!-- <img src="./assets/images/register/mm.png"> -->
+              <i class="fa fa-lock userPasswordIcon PasswordIcon" aria-hidden="true"></i>
+            </span>
+          </div>
+          <div class="chose">
+            <input type="checkbox" class="checkbox" id="ck_rmbUser" value="0">自动登录
+            <span>忘记密码？</span>
+          </div>
+          <input class="button_login" type="button" value="登录" id="bt-login">
+        </div>
+      </form>
+    </div>
+  </div>
+
+  <!-- 底部版权 -->
+  <footer id="footer">
+
+  </footer>
+
+  <!--错误提示-->
+  <div id="showResult"></div>
+
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/jquery.cookie.js"></script>
+  <!-- <script src="./assets/js/base.js"></script> -->
+  <script src="./assets/js/login.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>吉他 - 静听</title>
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/category.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" href="./assets/css/category.css">
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- 导航栏 -->
+  <header id="header">
+
+  </header>
+
+  <div class="container-sm category-header-wrap">
+    <div class="category-header-banner">
+      <div class="img" style="background-image: url('./storage/category/guitar.jpg')">
+        <div class="content">
+          <h2>吉他</h2>
+          <p>Guitar</p>
+        </div>
+        <div class="mask"></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container-sm box">
+    <div class="main">
+      <div class="main-wrap">
+        <div class="content-box">
+          <div class="piano-list">
+            <div class="content-header">
+              <h2>
+                <i class="fa fa-music red"></i>最新音乐</h2>
+            </div>
+            <ul class="music-list clearfix" id="js-showLi">
+              
+
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 底部版权 -->
+  <footer id="footer">
+
+  </footer>
+  <script src="./assets/js/jquery.min.js"></script>
+  <script>
+    var headerLiActive = 2;
+
+    $.ajax({
+      url: "./assets/data/music/showMusic.php",
+      success: data => {
+        let arr = [],
+          html = "";
+
+        for (let obj of data) {
+          if (obj[9] == "guitar") {
+            arr.push(obj)
+          }
+        }
+        
+        for (let i = 0; i < 10; i++) {
+          let obj = arr[i];
+
+          html += `
+              <li>
+                <div class="u-cover">
+                  <img src=${obj[8]}>
+                  <a title=${obj[1]+"-"+obj[2]} href=${"./music_details.html?mid=" + obj[0]} class="msk"></a>
+                </div>
+                <p class="dec">
+                  <a title=${obj[1]+"-"+obj[2]} href=${"./music_details.html?mid=" + obj[0]}>${obj[1]}</a>
+                </p>
+                <div class="author">${obj[3]}</div>
+              </li>
+        `;
+        }
+        $("#js-showLi").html(html)
+      },
+      error: () => { console.log("网络错误!") },
+    })
+  </script>
+  <script src="./assets/js/headFoot.js"></script>
+</body>
+
+</html>

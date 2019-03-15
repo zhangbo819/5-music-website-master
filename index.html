@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+  <title>静听</title>
+  <link rel="icon" href="favicon.ico" mce_href="favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="favicon.ico" mce_href="http://jt.hapboy.xyz/favicon.ico" type="image/x-icon">
+  <link rel="stylesheet" href="./assets/css/reset.css">
+  <link rel="stylesheet" href="./assets/css/common.css">
+  <link rel="stylesheet" href="./assets/css/slider.css">
+  <link rel="stylesheet" href="./assets/css/font-awesome.min.css">
+</head>
+
+<body>
+  <!-- 导航栏 -->
+  <header id="header">
+    
+  </header>
+
+  <!-- 轮播图 -->
+  <div class="container-sm slider-wrap">
+    <div class="slider">
+      <div class="slider-item-list"></div>
+      <div class="slider-dots">
+        <div class="slider-dots-wrap"></div>
+      </div>
+      <div class="slider-arrows">
+        <div class="slider-arrows-wrap">
+          <span class="slider-arrow slider-arrow-left" onclick="HBSlider.turn(-1)"></span>
+          <span class="slider-arrow slider-arrow-right" onclick="HBSlider.turn(1)"></span>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- 主内容区域 -->
+  <div class="container-sm box">
+    <!-- 主内容 -->
+    <div class="main">
+      <div class="main-wrap">
+        <div class="content-box">
+          <!-- 热门推荐 -->
+          <div class="hot-recommand">
+            <div class="content-header">
+              <h2>
+                <i class="fa fa-music red"></i>热门推荐</h2>
+              <div class="tab">
+                <a href="./piano.html">钢琴</a>
+                <span class="line">|</span>
+                <a href="./guitar.html">吉他</a>
+                <span class="line">|</span>
+                <a href="./cartoon.html">动漫</a>
+                <span class="line">|</span>
+                <a href="./elect.html">电子</a>
+              </div>
+              <!--<span class="more"><a href="#">更多</a></span>-->
+            </div>
+            <ul class="music-list clearfix" id="js-hot">
+              
+            </ul>
+          </div>
+
+          <!-- 分类榜单 -->
+          <div class="category">
+            <div class="content-header">
+              <h2>
+                <i class="fa fa-music red"></i>分类榜单</h2>
+            </div>
+
+            <div class="row" id="js-cRow1">
+              
+            </div>
+            
+            <div class="row" id="js-cRow2">
+              
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- 侧边栏 -->
+    <div class="sidebar" style="min-height: 1094px">
+      <div class="right-module">
+        <h4>最新单曲</h4>
+        <ul class="new-artist-songs" id="js-zuixin">
+          
+        </ul>
+      </div>
+      <div class="right-module">
+        <h4>热门单曲</h4>
+        <ul class="new-artist-songs" id="js-remen">
+          
+        </ul>
+      </div>
+    </div>
+  </div>
+  
+  <!-- 底部版权 -->
+  <footer id="footer">
+    
+  </footer>
+
+  <!-- JS 脚本 -->
+  <script src="./assets/js/jquery.min.js"></script>
+  <script src="./assets/js/HBSlider.js"></script>
+  <script src="./assets/js/index.js"></script>
+  <script src="./assets/js/headFoot.js"></script>
+  
+</body>
+
+</html>
